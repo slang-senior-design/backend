@@ -1,5 +1,6 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 import db
+import dbsetup
 
 application = Flask(__name__)
 
@@ -8,10 +9,23 @@ application = Flask(__name__)
 def index():
     return '-_-'
 
+@application.route('/db/categories')
+def getCategories():
+    return jsonify(db.getCategories())
 
-@application.route('/db/<id>')
-def test(id):
-    return jsonify(db.selectTable())
+# ......not optimal
+@application.route('/db/terms')
+def getTerms():
+    category = request.args.get('category')
+    print(category)
+    if(category == None):
+        return jsonify(db.getAllTerms())
+    else:
+        return jsonify(db.getTermsByCategory(category))
+
+@application.route('/db/terms/<english>')
+def getTerm(english):
+    pass
 
 
 #-------------------- Do not edit below --------------------
