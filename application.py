@@ -13,19 +13,19 @@ def index():
 def getCategories():
     return jsonify(db.getCategories())
 
-# ......not optimal
-@application.route('/db/terms/<category>')
-def getTerms(category):
-    # category = request.args.get('category')
-    # print(category)
-    if(category == None):
-        return jsonify(db.getAllTerms())
-    else:
-        return jsonify(db.getTermsByCategory(category))
+@application.route('/db/terms')
+def getTerms():
+    return jsonify(db.getAllTerms())
+
+
+@application.route('db/categories/<category>')
+def getTermsByCategory(category):
+    return jsonify(db.getTermsByCategory(category))
+
 
 @application.route('/db/terms/<english>')
 def getTerm(english):
-    pass
+    return english
 
 
 #-------------------- Do not edit below --------------------

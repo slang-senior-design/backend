@@ -4,7 +4,7 @@ import sqlite3
 
 conn = sqlite3.connect(db.dbname)
 c = conn.cursor()
-c.execute('''DROP TABLE terms''')
+c.execute('''DROP TABLE if exists terms''')
 c.execute('''CREATE TABLE if not exists terms
         (english text, url text, category text)''')
 
