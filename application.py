@@ -14,10 +14,10 @@ def getCategories():
     return jsonify(db.getCategories())
 
 # ......not optimal
-@application.route('/db/terms')
-def getTerms():
-    category = request.args.get('category')
-    print(category)
+@application.route('/db/terms/<category>')
+def getTerms(category):
+    # category = request.args.get('category')
+    # print(category)
     if(category == None):
         return jsonify(db.getAllTerms())
     else:
