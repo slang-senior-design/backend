@@ -18,14 +18,14 @@ def getTerms():
     return jsonify(db.getAllTerms())
 
 
-@application.route('db/categories/<category>')
+@application.route('/db/categories/<category>')
 def getTermsByCategory(category):
     return jsonify(db.getTermsByCategory(category))
 
 
 @application.route('/db/terms/<english>')
 def getTerm(english):
-    return english
+    return jsonify(db.getTerm(english))
 
 
 #-------------------- Do not edit below --------------------

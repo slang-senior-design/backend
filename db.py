@@ -15,7 +15,7 @@ import sqlite3
 #     }
 #--------------------
 
-dbname = "slang.db" # for local testing
+dbname = "slang.db" 
 
 def createTable():
     conn = sqlite3.connect(dbname)
@@ -59,5 +59,22 @@ def getTermsByCategory(category):
     conn.close()
     return e
 
+def getTerm(english):
+    conn = sqlite3.connect(dbname)
+    c = conn.cursor()
+    t = (english,)
+    c.execute('SELECT * from terms where english=?', t)
+    e = c.fetchall()
+    conn.commit()
+    conn.close()
+    return e
+
 def getCategories():
-    return ['fruits', 'and shit']
+    conn = sqlite3.connect(dbname)
+    c = conn.cursor()
+    c.execute('SELECT DISTINCT category from terms where category is not null')
+    e = c.fetchall()
+    flat_list = [item for sublist in e for item in sublist]
+    conn.commit()
+    conn.close()
+    return flat_list
