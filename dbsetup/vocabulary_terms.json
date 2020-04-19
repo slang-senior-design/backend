@@ -12,7 +12,7 @@
 		"nine", 
 		"ten"
 	], 
-	"more_numbers": [
+	"more numbers": [
 		"eleven", 
 		"twelve", 
 		"thirteen", 
@@ -23,25 +23,25 @@
 		"eighteen", 
 		"nineteen", 
 		"twenty", 
-		"one+hundred", 
-		"one+thousand", 
-		"one+million"
+		"one hundred", 
+		"one thousand", 
+		"one million"
 	], 
-	"conversational_phrases": [
+	"conversational phrases": [
 		"hello", 
 		"bye", 
-		"good/thank-you", 
+		"good, thank you", 
 		"yes", 
 		"no"
 	], 
-	"conversational_questions": [
+	"conversational questions": [
 		"who",
 		"what",
 		"when",
 		"where",
 		"why",
 		"how",
-		"what's-up"
+		"what's up"
 	],
 	"colors": [
 		"red", 
@@ -69,7 +69,7 @@
 		"monkey",
 		"squirrel"
 	],
-	"fruits_and_vegetables": [
+	"fruits and vegetables": [
 		"apple", 
 		"banana", 
 		"orange", 
@@ -84,7 +84,8 @@
 		"potato", 
 		"corn", 
 		"onion", 
-		"cabbage"
+		"cabbage",
+		"melon"
 	],
 	"foods": [
 		"soup", 
@@ -96,10 +97,10 @@
 		"hamburger", 
 		"spaghetti", 
 		"pizza",
-		"sausage/hot-dog", 
+		"hot dog", 
 		"salad",
 		"pie", 
-		"ice-cream",
+		"ice cream",
 		"cookie",
 		"chocolate"
 	],
@@ -108,15 +109,16 @@
 		"baseball", 
 		"football", 
 		"volleyball", 
-		"ping-pong/tennis", 
+		"tennis", 
 		"golf",
 		"swim",
-		"ice-skate",
+		"ice skating",
 		"hockey",
 		"bowling",
-		"work-out",
+		"work out",
 		"music",
 		"cooking",
+		"rock climbing",
 		"travel",
 		"eat",
 		"fishing"

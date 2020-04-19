@@ -29,6 +29,9 @@ with open('clean-dataset.csv', newline='', encoding="utf-8") as csvfile:
 	with open("convert_log.txt", "w") as f:
 		for i, row in enumerate(spamreader):
 			english = row[2].lower()
+			# edit these into csv file?
+			english = english.replace("-", " ")
+			english = english.replace("+", " ")
 			url = row[13]
 			filename = url.split("/")[-1].split(".")[0]
 			url = convert.converturl(url, english, f'{filename}.mp4')
