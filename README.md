@@ -1,3 +1,5 @@
+The backend is deployed at http://slang-dev.us-east-1.elasticbeanstalk.com/
+
 Requirements: python3
 
 The dataset used is provided as `dbsetup/clean-dataset.csv`
