@@ -1,21 +1,8 @@
 import os
 import sqlite3
+import config
 
-#-------------------- This is for MySQL, which we aren't using but may later look into
-# if 'RDS_HOSTNAME' in os.environ:
-#     DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.mysql',
-#             'NAME': os.environ['RDS_DB_NAME'],
-#             'USER': os.environ['RDS_USERNAME'],
-#             'PASSWORD': os.environ['RDS_PASSWORD'],
-#             'HOST': os.environ['RDS_HOSTNAME'],
-#             'PORT': os.environ['RDS_PORT'],
-#         }
-#     }
-#--------------------
-
-dbname = "slang.db" 
+dbname = config.dbname
 
 def createTable():
     conn = sqlite3.connect(dbname)

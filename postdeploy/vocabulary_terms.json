@@ -23,14 +23,14 @@
 		"eighteen", 
 		"nineteen", 
 		"twenty", 
-		"one hundred", 
-		"one thousand", 
-		"one million"
+		"one+hundred", 
+		"one+thousand", 
+		"one+million"
 	], 
 	"conversational_phrases": [
 		"hello", 
 		"bye", 
-		"good, thank you", 
+		"good/thank-you", 
 		"yes", 
 		"no"
 	], 
@@ -41,7 +41,7 @@
 		"where",
 		"why",
 		"how",
-		"what's up"
+		"what's-up"
 	],
 	"colors": [
 		"red", 
@@ -84,8 +84,7 @@
 		"potato", 
 		"corn", 
 		"onion", 
-		"cabbage",
-		"melon"
+		"cabbage"
 	],
 	"foods": [
 		"soup", 
@@ -97,10 +96,10 @@
 		"hamburger", 
 		"spaghetti", 
 		"pizza",
-		"hot dog", 
+		"sausage/hot-dog", 
 		"salad",
 		"pie", 
-		"ice cream",
+		"ice-cream",
 		"cookie",
 		"chocolate"
 	],
@@ -109,16 +108,15 @@
 		"baseball", 
 		"football", 
 		"volleyball", 
-		"tennis", 
+		"ping-pong/tennis", 
 		"golf",
 		"swim",
-		"ice skating",
+		"ice-skate",
 		"hockey",
 		"bowling",
-		"work out",
+		"work-out",
 		"music",
 		"cooking",
-		"rock climbing",
 		"travel",
 		"eat",
 		"fishing"
