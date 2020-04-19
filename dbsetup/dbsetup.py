@@ -31,7 +31,7 @@ with open('clean-dataset.csv', newline='', encoding="utf-8") as csvfile:
 			english = row[2].lower()
 			url = row[13]
 			filename = url.split("/")[-1].split(".")[0]
-			url = convert.convert(url, english, f'{filename}.mp4')
+			url = convert.converturl(url, english, f'{filename}.mp4')
 
 			t = (english, url, None)
 			c.execute("INSERT INTO terms VALUES (?,?,?)", t)
