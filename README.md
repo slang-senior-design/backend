@@ -44,10 +44,12 @@ eb create slang-env
 Wait for the commands to finish running and use `eb open` to lauch the remote site.
 
 ## Usage
-term object:
-    english
-    link to video
-    category if any
+```
+term:
+ - english
+ - link to video
+ - category if any
+```
 
 `/db/terms`: get complete list of terms objects  
 `/db/terms/<english>`: get a list of term objects with matching `<english>`  
