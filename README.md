@@ -40,3 +40,14 @@ eb init -p python-3.6 slang --region us-east-2
 eb create slang-env
 ```
 Wait for the commands to finish running and use `eb open` to lauch the remote site.
+
+## Usage
+term object:
+    english
+    link to video
+    category if any
+
+`/db/terms`: get complete list of terms objects  
+`/db/terms/<english>`: get a list of term objects with matching `<english>`  
+`/db/categories`: get a list of the categories  
+`/db/categories/<category>`: get a list of all the term objects in the `<category>`
