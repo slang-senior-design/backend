@@ -8,8 +8,9 @@ sys.path.append(str(root))
 import db
 import sqlite3
 import convert
+import config
 
-dbname = os.path.realpath(f"{root}/{db.dbname}")
+dbname = config.dbname
 
 conn = sqlite3.connect(dbname)
 c = conn.cursor()
@@ -47,4 +48,4 @@ with open("vocabulary_terms.json") as f:
 
 for category in categories.keys():
 	for english in categories[category]:
-		db.addCategoryToTerms(category, english) # -> no such table: terms
+		db.addCategoryToTerms(category, english)

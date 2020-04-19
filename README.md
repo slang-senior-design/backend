@@ -1,6 +1,6 @@
 Requirements: python3
 
-The dataset used is provided as `postdeploy/clean-dataset.csv`
+The dataset used is provided as `dbsetup/clean-dataset.csv`
 
 ## Local deployment:
 To run to backend server:
@@ -14,7 +14,8 @@ The database file is provided as `slang.db`.
 
 If you delete the database by accident, in a seperate console:
 ```
-python postdeploy/dbsetup.py
+cd dbsetup
+python dbsetup.py
 ```
 
 #### MOV TO MP4
