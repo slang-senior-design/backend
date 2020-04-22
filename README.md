@@ -34,7 +34,8 @@ and  fill in your AWS keys and the url of your S3 bucket in `config.py`.
 ## Cloud deployment:
 Requires an AWS account
 
-Install the EB CLI: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install.html
+Install the EB CLI: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install.html  
+In the root directory:
 
 ```
 eb init -p python-3.6 slang --region us-east-2
